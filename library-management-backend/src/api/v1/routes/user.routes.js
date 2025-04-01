@@ -33,13 +33,13 @@ router.get('/profile',
     getUserProfileController
 );
 
-router.put('/profile',
+router.put('/update',
     verifyToken,
     validateRequest(updateUserSchema),
     updateUserController
 );
 
-router.delete('/profile',
+router.delete('/delete',
     verifyToken,
     deleteUserController
 );
