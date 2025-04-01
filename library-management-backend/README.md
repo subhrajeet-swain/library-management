@@ -53,6 +53,7 @@ npm run dev
 
 The server will start on the port specified in your .env file (default: 8000).
 
+```
 src/
 ├── api/
 │   ├── v1/
@@ -68,6 +69,7 @@ src/
 ├── lib/
 │   └── utils/
 └── app.js
+```
 
 ## API Documentation
 

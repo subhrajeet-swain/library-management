@@ -36,6 +36,7 @@ npm run dev
 The application will be available at `http://localhost:5173` (default Vite port).
 
 ## Project Structure
+```
 library-management-frontend/
 ├── src/
 │ ├── assets/ # Static assets (images, fonts, etc.)
@@ -46,3 +47,4 @@ library-management-frontend/
 │ ├── utils/ # Utility functions
 │ ├── App.jsx # Root component
 │ └── main.jsx # Entry point
+```
