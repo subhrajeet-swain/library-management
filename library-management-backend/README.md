@@ -58,6 +58,7 @@ src/
 ├── api/
 │   ├── v1/
 │   │   ├── controllers/
+│   │   ├── middlewares/
 │   │   ├── routes/
 │   │   └── validations/
 │   └── index.js
