@@ -24,7 +24,7 @@ Before running this application, make sure you have:
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/subhrajeet-swain/library-management.git
 cd library-management-backend
 ```
 
@@ -76,7 +76,8 @@ src/
 
 ### Base URL
 ```
-http://localhost:8000/api/v1
+http://localhost:<your_port>/api/v1
+For example - http://localhost:8000/api/v1
 ```
 
 ### Authentication Endpoints

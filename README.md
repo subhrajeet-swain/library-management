@@ -38,7 +38,7 @@ npm install
 
 2. Create `.env` file in backend directory:
 ```env
-PORT=8000
+PORT=your_backend_port
 PGHOST=your_database_host
 PGDATABASE=your_database_name
 PGUSER=your_database_user
@@ -62,7 +62,8 @@ npm install
 
 2. Create `.env` file in frontend directory:
 ```env
-VITE_API_URL=http://localhost:8000/api/v1
+VITE_API_URL=<your-backend-url>/api/v1
+For example - VITE_API_URL=http://localhost:8000/api/v1
 ```
 
 3. Start frontend development server:

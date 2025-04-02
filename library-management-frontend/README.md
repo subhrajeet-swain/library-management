@@ -11,7 +11,7 @@ A React-based frontend application for managing books operations.
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/subhrajeet-swain/library-management.git
 cd library-management-frontend
 ```
 
