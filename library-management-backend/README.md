@@ -19,6 +19,7 @@ Before running this application, make sure you have:
 - Node.js (v14 or higher)
 - npm (Node Package Manager)
 - PostgreSQL database (or access to a PostgreSQL instance)
+- k6 (for performance testing)
 
 ## Installation
 
@@ -202,6 +203,36 @@ The API returns consistent error responses in the following format:
 
 ## Database Configuration
 The application uses Sequelize ORM with PostgreSQL. Database configuration can be found in `src/configs/db.config.js`.
+
+## Testing
+
+### Performance Testing
+The application includes performance tests using k6, a modern load testing tool.
+
+#### Running Performance Tests
+```bash
+k6 run tests/performance/user.test.js
+```
+or
+```bash
+npm run test:performance
+```
+
+#### Test Configuration
+- Stages:
+  - 1 minute ramp-up to 20 virtual users
+  - 2 minutes maintaining 20 virtual users
+  - 1 minute ramp-down to 0 users
+
+#### Performance Thresholds
+- Error Rate: Less than 10%
+- Response Time: 95% of requests should complete within 500ms
+
+Before running tests, make sure to:
+1. Update the `BASE_URL` in the test file
+2. Provide a valid `authToken` for authenticated endpoints
+3. Have the application running in the environment you want to test
+
 
 ## Author
 Subhrajeet Swain
